@@ -12,9 +12,13 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 # export LANG=en_US.UTF-8
+ANDROID_SDK_ROOT=~/.android/sdk
+ANDROID_HOME=~/.android/sdk
+export PATH="$ANDROID_HOME/platform-tools;$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator/bin:$PATH"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export RUBY_YJIT_ENABLE=1
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
